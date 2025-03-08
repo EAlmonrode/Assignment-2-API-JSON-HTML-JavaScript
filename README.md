@@ -2,3 +2,5 @@
 Retrieves and displays US population data from the API:  
 [https://datausa.io/api/data?drilldowns=Nation&measures=Population](https://datausa.io/api/data?drilldowns=Nation&measures=Population)
 
+## Screenshot
+![Screenshot of US Population Webpage](Screenshot.png)
