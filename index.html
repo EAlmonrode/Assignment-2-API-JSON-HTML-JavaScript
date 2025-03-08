@@ -13,12 +13,12 @@
         <table>
             <thead>
                 <tr>
-                    <th @click="sortData('year')">Year</th>
-                    <th @click="sortData('population')">Population</th>
+                    <th>Year</th>
+                    <th>Population</th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="entry in sortedData" :key="entry.Year">
+                <tr v-for="entry in populationData" :key="entry.Year">
                     <td>{{ entry.Year }}</td>
                     <td>{{ entry.Population.toLocaleString() }}</td>
                 </tr>
