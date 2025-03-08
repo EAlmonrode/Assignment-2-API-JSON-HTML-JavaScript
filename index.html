@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Population Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>US Population Data</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th @click="sortData('year')">Year</th>
+                    <th @click="sortData('population')">Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="entry in sortedData" :key="entry.Year">
+                    <td>{{ entry.Year }}</td>
+                    <td>{{ entry.Population.toLocaleString() }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
